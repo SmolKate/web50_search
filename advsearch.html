@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            div, h1, h2 {
+                margin-left: 30px;
+            }
+            h1 {
+                color: red;
+                line-height: 50px;
+                font-size: 20px;
+                font-weight: lighter;
+                padding-top: 50px;
+                
+                
+            }
+
+            h2 {
+                font-size: 18px;
+                font-weight: lighter;
+                margin-top: 30px;
+                
+            }
+            hr {
+                border: none;
+                background-color: lightgray; 
+                color:lightgray;
+                height: 2px;
+            }
+        
+            .btn {
+                float: right;
+                text-align: center;
+                margin: 5px;
+                border-color: transparent;
+                background-color: white;
+            }
+
+            .btn:hover {
+                text-decoration: underline;
+            }    
+
+            #btn3 {
+                background-color: rgb(0, 140, 255);
+                color: white;
+                border: none;
+                padding: 5px 40px 5px 40px;
+                position: absolute;
+                right: 0;
+                
+            }
+
+            #pos {
+                position: relative;
+                width: 500px;
+                padding-top: 30px;
+            }
+
+
+            #main {
+                line-height: 40px;
+                
+                
+            }
+            .cl {
+                position: absolute;
+                left: 250px;
+                margin-top: 10px;
+                width: 305px;
+                outline-color: rgb(0, 140, 255);
+                padding: 5px;
+                
+            }
+            #main.form {
+                vertical-align: middle;
+                display:table-cell;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="index.html">
+                <button class="btn" type="submit">Back</button>
+            </form>
+        </div>
+        <h1>Advanced Search</h1> 
+        <hr>
+        <h2>Find pages with...</h2>
+            
+         <div id=main>
+            <form action="https://google.com/search">
+                all these words:
+                <input class="cl" type="text" name="as_q"><br>
+    
+            
+                this exact word or phrase:
+                <input class="cl" type="text" name="as_epq"><br>
+            
+            
+                any of these words:
+                <input class="cl" type="text" name="as_oq"><br>
+            
+            
+                none of these words:
+                <input class="cl" type="text" name="as_eq"><br>
+                <div id="pos">
+                    <input id="btn3" type="submit" value="Advanced Search">
+                </div>
+
+                
+            </form>    
+         </div>
+       
+        
+
+
+    </body>
+</html>
